@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gnana Deepika — Own Your Life</title>
     <style>
+        /* Google Fonts - సింపుల్ అండ్ మోడ్రన్ లుక్ */
         @import url('https://googleapis.com');
 
         * {
@@ -17,15 +18,16 @@
             scroll-behavior: smooth;
         }
 
+        /* మౌనరాగం లాంటి ప్యూర్ డార్క్ థీమ్ */
         body {
-            background-color: #0a0a0a;
-            color: #cccccc;
+            background-color: #080808;
+            color: #b3b3b3;
             font-family: 'Inter', 'Noto Serif Telugu', serif;
             line-height: 1.6;
             -webkit-font-smoothing: antialiased;
         }
 
-        /* 1. MOUNARAGAM STYLE WELCOME SCREEN */
+        /* 1. WELCOME SCREEN (Mounaragam Style) */
         .welcome-screen {
             height: 100vh;
             display: flex;
@@ -34,41 +36,40 @@
             align-items: center;
             text-align: center;
             padding: 20px;
-            background-color: #0a0a0a;
-            position: relative;
-            z-index: 10;
+            background-color: #080808;
         }
 
-        .brand-sub {
-            font-size: 0.8rem;
+        .brand-subtitle {
+            font-size: 0.75rem;
             letter-spacing: 5px;
             color: #555;
             text-transform: uppercase;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
 
         .welcome-title {
             font-size: 2.2rem;
             color: #ffffff;
             font-weight: 400;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
             letter-spacing: 1px;
         }
 
         .welcome-tag {
-            font-size: 1rem;
-            color: #888;
-            margin-bottom: 50px;
+            font-size: 0.9rem;
+            color: #777;
+            margin-bottom: 60px;
             font-weight: 300;
+            letter-spacing: 1px;
         }
 
         .enter-btn {
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             letter-spacing: 4px;
             color: #ffffff;
             text-decoration: none;
             border: 1px solid #222;
-            padding: 12px 40px;
+            padding: 12px 38px;
             text-transform: uppercase;
             transition: all 0.4s ease;
         }
@@ -79,134 +80,157 @@
             color: #000000;
         }
 
-        /* Main Content Section Hidden Until Scroll or Enter */
+        /* Main Content Section */
         .main-content {
-            max-width: 600px;
+            max-width: 540px;
             margin: 0 auto;
-            padding: 40px 20px 100px 20px;
+            padding: 20px 20px 100px 20px;
         }
 
         .separator {
-            color: #444;
-            margin: 60px 0;
+            color: #333;
+            margin: 55px 0;
             text-align: center;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
         }
 
         h2 {
-            font-size: 1.3rem;
+            font-size: 1.15rem;
             color: #ffffff;
             font-weight: 400;
-            margin-bottom: 50px;
-            letter-spacing: 1px;
+            margin-bottom: 45px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
             text-align: center;
         }
 
-        /* 2. YOUR APPROACH LAYOUT (Small Font) */
+        /* 2. MY APPROACH (Small Font & Clean Alignment) */
         .approach-flow {
             text-align: left;
         }
 
-        .step {
-            margin-bottom: 45px;
-            position: relative;
+        .pillar {
+            margin-bottom: 40px;
         }
 
-        .step h3 {
-            font-size: 0.95rem;
+        .pillar h3 {
+            font-size: 0.9rem;
             color: #ffffff;
             margin-bottom: 8px;
             font-weight: 500;
             letter-spacing: 0.5px;
         }
 
-        .step p {
-            color: #999;
-            font-size: 0.85rem;
+        .pillar p {
+            color: #808080;
+            font-size: 0.8rem;
             text-align: justify;
+            font-weight: 300;
         }
 
-        /* Booking Section */
-        .booking-section h2 {
-            margin-bottom: 20px;
-        }
-
+        /* 3. Booking Section */
         .booking-box {
-            background: #111111;
+            background: #0f0f0f;
             min-height: 200px;
             margin-top: 30px;
             padding: 30px;
-            border: 1px solid #1c1c1c;
+            border: 1px solid #161616;
             text-align: center;
         }
 
-        /* Responsive */
+        .scroll-link {
+            text-decoration: none;
+            color: #555;
+            font-size: 0.7rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-top: 30px;
+            transition: color 0.3s;
+        }
+        
+        .scroll-link:hover {
+            color: #fff;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 60px 20px;
+            font-size: 0.65rem;
+            color: #444;
+            letter-spacing: 1px;
+            border-top: 1px solid #111;
+        }
+
         @media (max-width: 600px) {
             .welcome-title { font-size: 1.8rem; }
-            h2 { font-size: 1.1rem; }
+            h2 { font-size: 1rem; }
         }
     </style>
 </head>
 <body>
 
-    <!-- 1. WELCOME SCREEN (Mounaragam Style) -->
+    <!-- 1. WELCOME SCREEN (Only Own Your Life & One-one Session) -->
     <div class="welcome-screen">
-        <div class="brand-sub">Gnana Deepika</div>
+        <div class="brand-subtitle">Gnana Deepika</div>
         <div class="welcome-title">Own Your Life</div>
         <div class="welcome-tag">with 1-1 session</div>
         <a href="#content" class="enter-btn">ENTER</a>
     </div>
 
-    <!-- MAIN CONTENT START -->
+    <!-- MAIN CONTENT (Opens after clicking Enter) -->
     <div id="content" class="main-content">
         
         <div class="separator">✒</div>
 
-        <!-- 2. MY APPROACH SECTION -->
+        <!-- 2. MY APPROACH SECTION (Reshma's Framework Style) -->
         <section class="approach-section">
             <h2>My Approach</h2>
             
             <div class="approach-flow">
                 <!-- Pillar 1 -->
-                <div class="step">
-                    <h3>🎯 1. Clarity and Alignment</h3>
-                    <p>Job search లో అసలు కన్ఫ్యూజన్ ఎందుకు వస్తుంది? Feeling stuck or overwhelmed? మొదట మీ ఆలోచనలకు ఒక క్లియర్ డైరెక్షన్ ఇచ్చి, మీ goals ని మీ life purpose తో align చేస్తాము.</p>
+                <div class="pillar">
+                    <h3>🎯 Clarity and Alignment</h3>
+                    <p>Job search లో చాలామంది drowning under stress and self-doubt. మేము మీ "why" ని క్లియర్ గా అర్థం చేసుకుని, మీ ప్రతి అడుగుని మీ నిజమైన career goals తో align చేస్తాము.</p>
                 </div>
 
                 <!-- Pillar 2 -->
-                <div class="step">
-                    <h3>🧘 2. Emotional Healing</h3>
-                    <p>Rejections, ఇంటర్వ్యూ భయం మరియు నిరాశ... వీటిని దాటడానికి కేవలం సలహాలు సరిపోవు. EFT Coaching (Tapping technique) ద్వారా మీ stress మరియు ఆందోళనలను రూట్ నుండి హీల్ చేస్తాము.</p>
+                <div class="pillar">
+                    <h3>🧘 Emotional Healing</h3>
+                    <p>limiting patterns మరియు mental blocks ని బ్రేక్ చేయడానికి కేవలం గైడెన్స్ సరిపోదు. EFT (Tapping) టెక్నిక్ ఉపయోగించి deep-rooted fears, ఒత్తిడి మరియు subconscious blocks ని రిలీజ్ చేస్తాము.</p>
                 </div>
 
                 <!-- Pillar 3 -->
-                <div class="step">
-                    <h3>🚀 3. Sustainable Success</h3>
-                    <p>ఇది కేవలం ఒక ఉద్యోగం సంపాదించడం కోసం కాదు. Corporate work culture ని అర్థం చేసుకుంటూ, మీ peak performance ని బూస్ట్ చేస్తూ... లాంగ్ రన్ లో సక్సెస్ అవ్వడానికి మిమ్మల్ని రెడీ చేస్తాము.</p>
-                </div>
-
-                <!-- Pillar 4 -->
-                <div class="step">
-                    <h3>💡 4. One-on-One Session</h3>
-                    <p>ప్రతి ఒక్కరి జర్నీ డిఫరెంట్. అందుకే ఈ పర్సనలైజ్డ్ వన్-ఆన్-వన్ సెషన్ ద్వారా మీ సమస్యలకు తగ్గట్టుగా స్ట్రాటజీని డిజైన్ చేసి, మీ లైఫ్ పై మీకు పూర్తి కంట్రోల్ ఇస్తాము.</p>
+                <div class="pillar">
+                    <h3>🚀 Sustainable Success</h3>
+                    <p>మేము కేవలం తాత్కాలిక ఉద్యోగాల (external trophies) వెనుక పడము. మీ peak performance ని పెంచుతూ, మీ కెరీర్ లో లాంగ్ టర్మ్ fulfilment మరియు సస్టైనబుల్ సక్సెస్ ని బిల్డ్ చేస్తాము.</p>
                 </div>
             </div>
+
+            <a href="#booking" class="scroll-link">Book your session ↓</a>
         </section>
 
         <div class="separator">✒</div>
 
         <!-- 3. BOOKING SECTION -->
         <section class="booking-section">
-            <h2>Book Your 1-1 Session</h2>
-            <p style="color: #666; font-size: 0.8rem; text-align: center;">కింది క్యాలెండర్ నుండి మీకు అనుకూలమైన డేట్ మరియు టైమ్ సెలెక్ట్ చేసుకోండి.</p>
+            <h2>Book Your Session</h2>
+            <p style="color: #555; font-size: 0.75rem; text-align: center;">కింది క్యాలెండర్ నుండి మీకు అనుకూలమైన డేట్ మరియు టైమ్ సెలెక్ట్ చేసుకోండి.</p>
             
             <div class="booking-box">
                 <!-- ⚠️ Note: ఇక్కడ మీ Topmate లేదా Calendly ఇంబెడ్ కోడ్ పేస్ట్ చేయండి -->
-                <p style="color: #333; font-style: italic; font-size: 0.75rem;">[Calendly/Topmate widget loads here]</p>
+                <p style="color: #222; font-style: italic; font-size: 0.7rem;">[Calendly/Topmate widget loads here]</p>
             </div>
         </section>
 
     </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Where Guidance Meets Growth</p>
+        <p style="margin-top: 5px;">© 2026 Gnana Deepika. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
