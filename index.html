@@ -1,1002 +1,1159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>1-1 Career Clarity Session | Gnana Deepika</title>
+<title>Gnana Deepika | 1-1 Career Clarity & Life Coaching</title>
 
-  <meta name="description"
-    content="Gnana Deepika 1-1 Career Clarity Sessions for job seekers feeling stuck, overwhelmed, confused or ready to level up. Get personalized career guidance, skill-gap identification, resume guidance, interview preparation and practical next-step planning.">
+<meta name="description" content="Gnana Deepika 1-1 Career Clarity and Life Coaching sessions for job seekers and professionals seeking clarity, career direction, personal growth and practical next steps.">
 
-  <meta name="keywords"
-    content="career clarity session, 1-1 career coaching, job seeker guidance, career guidance, resume guidance, interview preparation, career planning, job seeker support, Gnana Deepika, Shaik Sharif">
+<meta name="keywords" content="Gnana Deepika, 1-1 career clarity, career coaching, life coaching, job seeker guidance, career guidance, interview guidance, resume guidance, Shaik Sharif">
 
-  <meta name="author" content="Shaik Sharif">
-  <meta name="robots" content="index, follow">
+<meta name="author" content="Shaik Sharif">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#061b3d">
 
-  <meta property="og:title"
-    content="1-1 Career Clarity Session | Gnana Deepika">
+<meta property="og:title" content="Gnana Deepika | 1-1 Career Clarity Session">
+<meta property="og:description" content="Find clarity. Discover direction. Move forward.">
+<meta property="og:type" content="website">
 
-  <meta property="og:description"
-    content="Personalized career clarity and guidance for job seekers.">
+<link rel="icon" href="./gnana-deepika-logo.png">
 
-  <meta property="og:type" content="website">
+<style>
 
-  <meta name="theme-color" content="#061b3d">
+:root{
+    --navy:#061b3d;
+    --navy2:#0a2c59;
+    --teal:#087f6e;
+    --teal2:#18a889;
+    --gold:#d4aa45;
+    --gold2:#f4d77e;
+    --white:#ffffff;
+    --soft:#f4faf8;
+    --cream:#fffaf0;
+    --text:#17332f;
+    --muted:#657470;
+    --border:#deebe7;
+    --shadow:0 20px 60px rgba(6,27,61,.13);
+}
 
-  <link rel="icon" href="gnana-deepika-logo.png">
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
 
-  <style>
+body{
+    font-family:Inter,"Segoe UI",Arial,sans-serif;
+    color:var(--text);
+    background:#fff;
+    line-height:1.7;
+    overflow-x:hidden;
+}
 
-    :root {
-      --navy: #061b3d;
-      --navy2: #092754;
-      --teal: #087f6e;
-      --teal2: #18a889;
-      --gold: #d4aa45;
-      --gold2: #f3d477;
-      --white: #ffffff;
-      --cream: #fffaf0;
-      --text: #17332f;
-      --muted: #64736f;
-      --light: #f5faf9;
-      --border: #e1ebe8;
-      --shadow: 0 20px 55px rgba(6, 27, 61, .12);
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.container{
+    width:min(1180px,92%);
+    margin:auto;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,.94);
+    backdrop-filter:blur(16px);
+    border-bottom:1px solid rgba(222,235,231,.9);
+}
+
+nav{
+    min-height:78px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo{
+    width:52px;
+    height:52px;
+    border-radius:50%;
+    overflow:hidden;
+    box-shadow:
+        0 0 18px rgba(212,170,69,.35),
+        0 0 35px rgba(8,127,110,.15);
+}
+
+.logo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.brand-text strong{
+    display:block;
+    color:var(--navy);
+    font-size:15px;
+    letter-spacing:1.5px;
+}
+
+.brand-text small{
+    color:var(--gold);
+    letter-spacing:2px;
+    font-size:10px;
+}
+
+.nav-links{
+    display:flex;
+    gap:25px;
+    font-size:14px;
+    font-weight:700;
+}
+
+.nav-links a{
+    transition:.25s;
+}
+
+.nav-links a:hover{
+    color:var(--teal);
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:calc(100vh - 78px);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    overflow:hidden;
+    text-align:center;
+    color:white;
+
+    background:
+        radial-gradient(
+            circle at 50% 35%,
+            rgba(24,168,137,.24),
+            transparent 27%
+        ),
+        radial-gradient(
+            circle at 15% 80%,
+            rgba(212,170,69,.12),
+            transparent 25%
+        ),
+        linear-gradient(
+            135deg,
+            #04152e,
+            var(--navy),
+            var(--navy2)
+        );
+}
+
+/* cinematic light */
+
+.hero:before{
+    content:"";
+    position:absolute;
+    width:700px;
+    height:700px;
+    border-radius:50%;
+    border:1px solid rgba(212,170,69,.16);
+    box-shadow:
+        0 0 80px rgba(212,170,69,.06),
+        inset 0 0 100px rgba(24,168,137,.06);
+    animation:rotateGlow 22s linear infinite;
+}
+
+.hero:after{
+    content:"";
+    position:absolute;
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    background:rgba(24,168,137,.09);
+    filter:blur(70px);
+    animation:pulseGlow 5s ease-in-out infinite;
+}
+
+@keyframes rotateGlow{
+    from{transform:rotate(0deg)}
+    to{transform:rotate(360deg)}
+}
+
+@keyframes pulseGlow{
+    0%,100%{
+        transform:scale(.85);
+        opacity:.5;
+    }
+    50%{
+        transform:scale(1.15);
+        opacity:1;
+    }
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    max-width:900px;
+    animation:fadeUp 1.2s ease;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.hero-logo{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    margin:0 auto 25px;
+    overflow:hidden;
+    border:2px solid rgba(212,170,69,.65);
+    box-shadow:
+        0 0 25px rgba(212,170,69,.3),
+        0 0 65px rgba(8,127,110,.2);
+}
+
+.hero-logo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.eyebrow{
+    color:var(--gold2);
+    text-transform:uppercase;
+    letter-spacing:4px;
+    font-size:12px;
+    font-weight:800;
+}
+
+.hero h1{
+    font-size:clamp(43px,7vw,82px);
+    line-height:1.02;
+    margin:18px 0;
+}
+
+.hero h1 span{
+    color:var(--gold2);
+    text-shadow:0 0 25px rgba(244,215,126,.12);
+}
+
+.hero-description{
+    max-width:760px;
+    margin:auto;
+    font-size:19px;
+    color:#d8e8e5;
+}
+
+.hero-tagline{
+    margin:30px auto;
+    max-width:700px;
+    padding:18px 25px;
+    border:1px solid rgba(212,170,69,.45);
+    background:rgba(255,255,255,.045);
+    border-radius:18px;
+    font-size:18px;
+    font-weight:700;
+    box-shadow:
+        0 0 30px rgba(212,170,69,.05),
+        inset 0 0 25px rgba(255,255,255,.02);
+}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-top:28px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 24px;
+    border-radius:13px;
+    font-weight:800;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+}
+
+.btn-gold{
+    color:var(--navy);
+    background:linear-gradient(
+        135deg,
+        var(--gold),
+        var(--gold2)
+    );
+    box-shadow:0 0 30px rgba(212,170,69,.25);
+}
+
+.btn-teal{
+    color:white;
+    background:linear-gradient(
+        135deg,
+        var(--teal),
+        var(--teal2)
+    );
+    box-shadow:0 0 30px rgba(24,168,137,.2);
+}
+
+/* ================= SECTIONS ================= */
+
+section{
+    padding:95px 0;
+}
+
+.soft{
+    background:var(--soft);
+}
+
+.cream{
+    background:linear-gradient(
+        135deg,
+        #f3fbf8,
+        #fffaf0
+    );
+}
+
+.section-title{
+    max-width:780px;
+    margin:0 auto 50px;
+    text-align:center;
+}
+
+.section-title h2{
+    color:var(--navy);
+    font-size:clamp(31px,5vw,49px);
+    line-height:1.15;
+    margin:10px 0;
+}
+
+.section-title p{
+    color:var(--muted);
+}
+
+/* ================= CARDS ================= */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
+
+.card{
+    position:relative;
+    overflow:hidden;
+    background:white;
+    border:1px solid var(--border);
+    border-radius:23px;
+    padding:28px;
+    box-shadow:var(--shadow);
+    transition:.35s;
+}
+
+.card:before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:3px;
+    background:linear-gradient(
+        90deg,
+        var(--teal),
+        var(--gold),
+        var(--teal)
+    );
+    transform:scaleX(0);
+    transform-origin:center;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-9px);
+    box-shadow:
+        0 28px 70px rgba(6,27,61,.15),
+        0 0 30px rgba(8,127,110,.1);
+}
+
+.card:hover:before{
+    transform:scaleX(1);
+}
+
+.icon{
+    font-size:34px;
+    margin-bottom:12px;
+}
+
+.card h3{
+    color:var(--navy);
+    margin-bottom:8px;
+    font-size:20px;
+}
+
+.card p{
+    color:var(--muted);
+}
+
+/* ================= PROCESS ================= */
+
+.process{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.process-card{
+    text-align:center;
+    padding:30px 18px;
+    background:white;
+    border:1px solid var(--border);
+    border-radius:20px;
+    box-shadow:0 12px 35px rgba(6,27,61,.08);
+    transition:.3s;
+}
+
+.process-card:hover{
+    transform:translateY(-7px);
+}
+
+.number{
+    width:52px;
+    height:52px;
+    margin:0 auto 15px;
+    display:grid;
+    place-items:center;
+    border-radius:50%;
+    color:white;
+    font-weight:900;
+    background:linear-gradient(
+        135deg,
+        var(--teal),
+        var(--navy)
+    );
+    box-shadow:0 0 25px rgba(8,127,110,.22);
+}
+
+/* ================= WHO ================= */
+
+.who{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+}
+
+.who-item{
+    padding:20px;
+    border-radius:16px;
+    border:1px solid var(--border);
+    background:white;
+    box-shadow:0 8px 25px rgba(6,27,61,.06);
+    font-weight:750;
+    transition:.3s;
+}
+
+.who-item:hover{
+    transform:translateX(6px);
+    border-color:rgba(8,127,110,.35);
+}
+
+/* ================= QUOTE ================= */
+
+.quote-box{
+    max-width:1000px;
+    margin:auto;
+    padding:65px 35px;
+    border-radius:30px;
+    text-align:center;
+    color:white;
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(24,168,137,.22),
+            transparent 40%
+        ),
+        linear-gradient(
+            135deg,
+            #04152e,
+            #0a2c59
+        );
+    box-shadow:
+        0 30px 80px rgba(6,27,61,.22);
+}
+
+.quote-box h2{
+    color:var(--gold2);
+    font-size:clamp(28px,5vw,45px);
+    margin-bottom:18px;
+}
+
+.quote-box p{
+    max-width:760px;
+    margin:auto;
+    color:#dce9e7;
+    font-size:18px;
+}
+
+/* ================= CTA ================= */
+
+.cta{
+    text-align:center;
+}
+
+.cta-box{
+    max-width:900px;
+    margin:auto;
+    padding:65px 30px;
+    border-radius:30px;
+    background:
+        linear-gradient(
+            135deg,
+            #effaf7,
+            #fffaf0
+        );
+    border:1px solid #e5e9df;
+    box-shadow:var(--shadow);
+}
+
+.cta h2{
+    color:var(--navy);
+    font-size:clamp(32px,5vw,53px);
+    margin:10px 0;
+}
+
+.cta p{
+    color:var(--muted);
+    max-width:650px;
+    margin:auto;
+}
+
+.contact-buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-top:28px;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#04152e;
+    color:white;
+    text-align:center;
+    padding:50px 0;
+}
+
+.footer-logo{
+    width:78px;
+    height:78px;
+    border-radius:50%;
+    overflow:hidden;
+    margin:0 auto 15px;
+    border:2px solid rgba(212,170,69,.5);
+}
+
+.footer-logo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+footer strong{
+    display:block;
+    color:var(--gold2);
+    font-size:18px;
+    letter-spacing:1px;
+}
+
+footer small{
+    color:#a8c2c9;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:900px){
+
+    .nav-links{
+        display:none;
     }
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
+    .grid{
+        grid-template-columns:repeat(2,1fr);
     }
 
-    body {
-      font-family: "Segoe UI", Arial, sans-serif;
-      background: var(--white);
-      color: var(--text);
-      line-height: 1.7;
+    .process{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:600px){
+
+    section{
+        padding:70px 0;
     }
 
-    a {
-      text-decoration: none;
-      color: inherit;
+    .grid,
+    .process,
+    .who{
+        grid-template-columns:1fr;
     }
 
-    .container {
-      width: min(1150px, 92%);
-      margin: auto;
+    .hero{
+        min-height:90vh;
     }
 
-    /* HEADER */
-
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: rgba(255,255,255,.96);
-      backdrop-filter: blur(14px);
-      border-bottom: 1px solid var(--border);
+    .hero-description{
+        font-size:16px;
     }
 
-    nav {
-      min-height: 78px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 25px;
+    .hero-tagline{
+        font-size:15px;
     }
 
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-weight: 900;
+    .hero-logo{
+        width:82px;
+        height:82px;
     }
 
-    .brand-logo {
-      width: 52px;
-      height: 52px;
-      border-radius: 50%;
-      overflow: hidden;
-      box-shadow: 0 0 25px rgba(212,170,69,.45);
-    }
+}
 
-    .brand-logo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .brand-text span {
-      display: block;
-      font-size: 15px;
-      letter-spacing: 1px;
-      color: var(--navy);
-    }
-
-    .brand-text small {
-      color: var(--gold);
-      letter-spacing: 2px;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 25px;
-      font-size: 14px;
-      font-weight: 700;
-    }
-
-    .nav-links a:hover {
-      color: var(--teal);
-    }
-
-    /* HERO */
-
-    .hero {
-      min-height: calc(100vh - 78px);
-      display: flex;
-      align-items: center;
-      text-align: center;
-      color: white;
-      background:
-        radial-gradient(circle at 50% 20%, rgba(24,168,137,.28), transparent 35%),
-        linear-gradient(135deg, var(--navy), var(--navy2));
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero:before {
-      content: "";
-      position: absolute;
-      width: 500px;
-      height: 500px;
-      border: 1px solid rgba(212,170,69,.25);
-      border-radius: 50%;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%,-50%);
-      box-shadow:
-        0 0 80px rgba(212,170,69,.08),
-        inset 0 0 80px rgba(24,168,137,.06);
-    }
-
-    .hero-content {
-      position: relative;
-      z-index: 2;
-      max-width: 850px;
-      margin: auto;
-    }
-
-    .eyebrow {
-      color: var(--gold2);
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      font-size: 13px;
-      font-weight: 800;
-    }
-
-    h1 {
-      font-size: clamp(40px, 7vw, 76px);
-      line-height: 1.05;
-      margin: 18px 0;
-    }
-
-    h1 span {
-      color: var(--gold2);
-    }
-
-    .hero p {
-      font-size: 19px;
-      color: #dce9e7;
-      max-width: 760px;
-      margin: auto;
-    }
-
-    .hero-quote {
-      margin: 30px auto;
-      padding: 18px 25px;
-      border: 1px solid rgba(212,170,69,.5);
-      border-radius: 18px;
-      background: rgba(255,255,255,.06);
-      max-width: 700px;
-      font-size: 18px;
-      font-weight: 700;
-    }
-
-    .buttons {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      flex-wrap: wrap;
-      margin-top: 30px;
-    }
-
-    .btn {
-      padding: 14px 24px;
-      border-radius: 12px;
-      font-weight: 800;
-      transition: .3s;
-      display: inline-block;
-    }
-
-    .btn-gold {
-      background: linear-gradient(135deg, var(--gold), var(--gold2));
-      color: var(--navy);
-      box-shadow: 0 0 30px rgba(212,170,69,.25);
-    }
-
-    .btn-teal {
-      background: var(--teal);
-      color: white;
-      box-shadow: 0 0 25px rgba(24,168,137,.25);
-    }
-
-    .btn:hover {
-      transform: translateY(-4px);
-    }
-
-    /* SECTIONS */
-
-    section {
-      padding: 90px 0;
-    }
-
-    .section-title {
-      text-align: center;
-      max-width: 760px;
-      margin: 0 auto 45px;
-    }
-
-    .section-title h2 {
-      font-size: clamp(30px, 5vw, 48px);
-      color: var(--navy);
-      margin: 10px 0;
-    }
-
-    .section-title p {
-      color: var(--muted);
-    }
-
-    /* CARDS */
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3,1fr);
-      gap: 22px;
-    }
-
-    .card {
-      background: white;
-      border: 1px solid var(--border);
-      border-radius: 22px;
-      padding: 28px;
-      box-shadow: var(--shadow);
-      transition: .35s;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .card:after {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      height: 3px;
-      background: linear-gradient(90deg,var(--teal),var(--gold));
-      transform: scaleX(0);
-      transition: .35s;
-    }
-
-    .card:hover {
-      transform: translateY(-8px);
-      box-shadow:
-        0 25px 60px rgba(6,27,61,.15),
-        0 0 25px rgba(24,168,137,.12);
-    }
-
-    .card:hover:after {
-      transform: scaleX(1);
-    }
-
-    .icon {
-      font-size: 34px;
-      margin-bottom: 10px;
-    }
-
-    .card h3 {
-      color: var(--navy);
-      margin-bottom: 8px;
-    }
-
-    .card p {
-      color: var(--muted);
-    }
-
-    /* WHY */
-
-    .light {
-      background: var(--light);
-    }
-
-    /* PROCESS */
-
-    .process {
-      display: grid;
-      grid-template-columns: repeat(4,1fr);
-      gap: 18px;
-    }
-
-    .process-card {
-      text-align: center;
-      padding: 28px 18px;
-      border-radius: 20px;
-      background: white;
-      border: 1px solid var(--border);
-      box-shadow: 0 12px 35px rgba(6,27,61,.08);
-    }
-
-    .number {
-      width: 50px;
-      height: 50px;
-      margin: 0 auto 15px;
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
-      color: white;
-      font-weight: 900;
-      background: linear-gradient(135deg,var(--teal),var(--navy));
-      box-shadow: 0 0 25px rgba(8,127,110,.25);
-    }
-
-    /* WHO */
-
-    .who {
-      display: grid;
-      grid-template-columns: repeat(2,1fr);
-      gap: 18px;
-    }
-
-    .who-item {
-      padding: 18px 20px;
-      background: white;
-      border-radius: 15px;
-      border: 1px solid var(--border);
-      font-weight: 700;
-      box-shadow: 0 8px 25px rgba(6,27,61,.06);
-    }
-
-    /* QUOTE */
-
-    .big-quote {
-      background:
-        linear-gradient(135deg,var(--navy),#0b345e);
-      color: white;
-      text-align: center;
-      border-radius: 28px;
-      padding: 60px 30px;
-      box-shadow: 0 25px 70px rgba(6,27,61,.2);
-    }
-
-    .big-quote h2 {
-      color: var(--gold2);
-      margin-bottom: 18px;
-      font-size: clamp(26px,4vw,42px);
-    }
-
-    .big-quote p {
-      max-width: 760px;
-      margin: auto;
-      font-size: 19px;
-      color: #dce9e7;
-    }
-
-    /* CTA */
-
-    .cta {
-      text-align: center;
-      background: linear-gradient(135deg,#f0faf7,#fff9ec);
-    }
-
-    .cta-box {
-      max-width: 850px;
-      margin: auto;
-    }
-
-    .cta h2 {
-      color: var(--navy);
-      font-size: clamp(30px,5vw,50px);
-    }
-
-    .contact-buttons {
-      margin-top: 28px;
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      flex-wrap: wrap;
-    }
-
-    /* FOOTER */
-
-    footer {
-      background: #04152e;
-      color: white;
-      padding: 45px 0;
-      text-align: center;
-    }
-
-    footer img {
-      width: 75px;
-      height: 75px;
-      border-radius: 50%;
-      margin-bottom: 15px;
-    }
-
-    footer strong {
-      display: block;
-      color: var(--gold2);
-      font-size: 18px;
-    }
-
-    footer small {
-      color: #a9c1c9;
-    }
-
-    /* RESPONSIVE */
-
-    @media(max-width:900px) {
-
-      .nav-links {
-        display: none;
-      }
-
-      .grid {
-        grid-template-columns: repeat(2,1fr);
-      }
-
-      .process {
-        grid-template-columns: repeat(2,1fr);
-      }
-
-    }
-
-    @media(max-width:600px) {
-
-      section {
-        padding: 65px 0;
-      }
-
-      .grid,
-      .who,
-      .process {
-        grid-template-columns: 1fr;
-      }
-
-      .hero {
-        min-height: 85vh;
-      }
-
-      .hero p {
-        font-size: 16px;
-      }
-
-      .hero-quote {
-        font-size: 15px;
-      }
-
-    }
-
-  </style>
+</style>
 </head>
 
 <body>
 
-<!-- HEADER -->
+<!-- ================= HEADER ================= -->
 
 <header>
 
-  <div class="container">
+<div class="container">
 
-    <nav>
+<nav>
 
-      <a href="#" class="brand">
+<a href="#" class="brand">
 
-        <div class="brand-logo">
-          <img src="gnana-deepika-logo.png"
-               alt="Gnana Deepika Logo">
-        </div>
+<div class="logo">
+<img src="./gnana-deepika-logo.png"
+     alt="Gnana Deepika Logo">
+</div>
 
-        <div class="brand-text">
-          <span>GNANA DEEPIKA</span>
-          <small>CAREER CLARITY</small>
-        </div>
+<div class="brand-text">
+<strong>GNANA DEEPIKA</strong>
+<small>1-1 CAREER CLARITY</small>
+</div>
 
-      </a>
+</a>
 
-      <div class="nav-links">
-        <a href="#why">Why</a>
-        <a href="#sessions">Sessions</a>
-        <a href="#process">How It Works</a>
-        <a href="#who">Who It's For</a>
-        <a href="#contact">Book Call</a>
-      </div>
+<div class="nav-links">
+<a href="#why">Why</a>
+<a href="#sessions">Sessions</a>
+<a href="#process">How It Works</a>
+<a href="#who">Who It's For</a>
+<a href="#contact">Book Call</a>
+</div>
 
-    </nav>
+</nav>
 
-  </div>
+</div>
 
 </header>
 
 
-<!-- HERO -->
+<!-- ================= HERO ================= -->
 
 <section class="hero">
 
-  <div class="container">
+<div class="container">
 
-    <div class="hero-content">
+<div class="hero-content">
 
-      <div class="eyebrow">
-        Gnana Deepika • 1-1 Session
-      </div>
+<div class="hero-logo">
 
-      <h1>
-        Find Your <span>Career Clarity.</span>
-      </h1>
+<img src="./gnana-deepika-logo.png"
+     alt="Gnana Deepika Logo">
 
-      <p>
-        Personalized one-to-one guidance for job seekers
-        who feel stuck, overwhelmed, confused,
-        or ready to level up.
-      </p>
+</div>
 
-      <div class="hero-quote">
+<div class="eyebrow">
+Gnana Deepika • Personal 1-1 Session
+</div>
 
-        “Sometimes you don't need more information.
-        You need clarity about what to do next.”
+<h1>
+Find Your <span>Career Clarity.</span>
+</h1>
 
-      </div>
+<p class="hero-description">
+Personalized guidance for job seekers and professionals
+who feel stuck, overwhelmed, confused,
+or ready to level up.
+</p>
 
-      <div class="buttons">
+<div class="hero-tagline">
 
-        <a class="btn btn-gold"
-           href="https://wa.me/919059527699?text=Hello%20Shaik%20Sharif%2C%20I%20would%20like%20to%20book%20a%20Free%20Clarity%20Call."
-           target="_blank">
+“Sometimes you don't need more information.
+You need clarity about what to do next.”
 
-          📞 Book Your Free Clarity Call
+</div>
 
-        </a>
+<div class="buttons">
 
-        <a class="btn btn-teal"
-           href="#sessions">
+<a class="btn btn-gold"
+href="https://wa.me/919059527699?text=Hello%20Shaik%20Sharif%2C%20I%20would%20like%20to%20book%20a%20Free%20Clarity%20Call."
+target="_blank">
 
-          Explore Session
+📞 Book Your Free Clarity Call
 
-        </a>
+</a>
 
-      </div>
+<a class="btn btn-teal"
+href="#sessions">
 
-    </div>
+Explore Session
 
-  </div>
+</a>
 
-</section>
+</div>
 
+</div>
 
-<!-- WHY -->
-
-<section id="why" class="light">
-
-  <div class="container">
-
-    <div class="section-title">
-
-      <div class="eyebrow">
-        Why 1-1 Guidance?
-      </div>
-
-      <h2>
-        You don't have to figure everything out alone.
-      </h2>
-
-      <p>
-        Career decisions can feel confusing when there are
-        too many choices and not enough clarity.
-      </p>
-
-    </div>
-
-
-    <div class="grid">
-
-      <div class="card">
-        <div class="icon">😕</div>
-        <h3>Feeling Stuck?</h3>
-        <p>
-          Not sure what your next career step should be?
-          We identify where you are and where you want to go.
-        </p>
-      </div>
-
-
-      <div class="card">
-        <div class="icon">😩</div>
-        <h3>Feeling Overwhelmed?</h3>
-        <p>
-          Too many options, skills or career paths?
-          We bring the situation into a clearer structure.
-        </p>
-      </div>
-
-
-      <div class="card">
-        <div class="icon">🚀</div>
-        <h3>Ready to Level Up?</h3>
-        <p>
-          Already moving forward but want a stronger direction,
-          strategy and action plan?
-        </p>
-      </div>
-
-    </div>
-
-  </div>
+</div>
 
 </section>
 
 
-<!-- SESSIONS -->
+<!-- ================= WHY ================= -->
+
+<section id="why" class="soft">
+
+<div class="container">
+
+<div class="section-title">
+
+<div class="eyebrow">
+Why 1-1 Guidance?
+</div>
+
+<h2>
+You don't have to figure everything out alone.
+</h2>
+
+<p>
+Career decisions can become difficult when
+there are too many choices and not enough clarity.
+</p>
+
+</div>
+
+
+<div class="grid">
+
+<div class="card">
+<div class="icon">😕</div>
+<h3>Feeling Stuck?</h3>
+<p>
+Not sure what your next career step should be?
+Let's bring your situation into focus.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">😵</div>
+<h3>Feeling Overwhelmed?</h3>
+<p>
+Too many skills, courses or career choices?
+Let's organize the possibilities.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">🚀</div>
+<h3>Ready to Level Up?</h3>
+<p>
+Already moving forward but looking for a
+stronger strategy and direction?
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= SESSIONS ================= -->
 
 <section id="sessions">
 
-  <div class="container">
+<div class="container">
 
-    <div class="section-title">
+<div class="section-title">
 
-      <div class="eyebrow">
-        Personalized Support
-      </div>
+<div class="eyebrow">
+Personalized Support
+</div>
 
-      <h2>
-        What We Work On
-      </h2>
+<h2>
+What We Work On
+</h2>
 
-      <p>
-        Every session is focused on your current situation,
-        goals and practical next steps.
-      </p>
+<p>
+Each session focuses on your situation,
+goals and practical next steps.
+</p>
 
-    </div>
-
-
-    <div class="grid">
-
-      <div class="card">
-        <div class="icon">🎯</div>
-        <h3>Career Clarity</h3>
-        <p>
-          Understand your current position,
-          goals and possible career directions.
-        </p>
-      </div>
+</div>
 
 
-      <div class="card">
-        <div class="icon">🧭</div>
-        <h3>Career Direction</h3>
-        <p>
-          Identify a practical direction based on
-          your interests, skills and goals.
-        </p>
-      </div>
+<div class="grid">
 
+<div class="card">
+<div class="icon">🎯</div>
+<h3>Career Clarity</h3>
+<p>
+Understand your current position,
+goals and possible directions.
+</p>
+</div>
 
-      <div class="card">
-        <div class="icon">📚</div>
-        <h3>Skill Gap Identification</h3>
-        <p>
-          Understand what skills you already have
-          and what you may need to develop.
-        </p>
-      </div>
+<div class="card">
+<div class="icon">🧭</div>
+<h3>Career Direction</h3>
+<p>
+Explore practical career directions
+based on your skills and goals.
+</p>
+</div>
 
+<div class="card">
+<div class="icon">📚</div>
+<h3>Skill Gap Identification</h3>
+<p>
+Identify existing strengths and
+skills that may need development.
+</p>
+</div>
 
-      <div class="card">
-        <div class="icon">📄</div>
-        <h3>Resume Guidance</h3>
-        <p>
-          Improve the way your skills, projects
-          and experience are presented.
-        </p>
-      </div>
+<div class="card">
+<div class="icon">📄</div>
+<h3>Resume Guidance</h3>
+<p>
+Present your skills, projects and
+experience more effectively.
+</p>
+</div>
 
+<div class="card">
+<div class="icon">💼</div>
+<h3>Job Search Strategy</h3>
+<p>
+Build a structured approach to
+finding relevant opportunities.
+</p>
+</div>
 
-      <div class="card">
-        <div class="icon">💼</div>
-        <h3>Job Search Strategy</h3>
-        <p>
-          Create a structured approach to finding
-          and applying for relevant opportunities.
-        </p>
-      </div>
+<div class="card">
+<div class="icon">🎤</div>
+<h3>Interview Preparation</h3>
+<p>
+Prepare for interviews, HR questions
+and professional communication.
+</p>
+</div>
 
+<div class="card">
+<div class="icon">🧠</div>
+<h3>Decision-Making Support</h3>
+<p>
+Think through important career
+decisions with greater clarity.
+</p>
+</div>
 
-      <div class="card">
-        <div class="icon">🎤</div>
-        <h3>Interview Preparation</h3>
-        <p>
-          Prepare for common interview situations,
-          questions and communication challenges.
-        </p>
-      </div>
+<div class="card">
+<div class="icon">⚡</div>
+<h3>Performance & Growth</h3>
+<p>
+Identify practical ways to improve
+focus, confidence and performance.
+</p>
+</div>
 
+</div>
 
-      <div class="card">
-        <div class="icon">🧠</div>
-        <h3>Decision-Making Support</h3>
-        <p>
-          Think through important career decisions
-          with a clearer framework.
-        </p>
-      </div>
-
-
-      <div class="card">
-        <div class="icon">⚡</div>
-        <h3>Performance & Growth</h3>
-        <p>
-          Identify practical ways to improve focus,
-          confidence and professional performance.
-        </p>
-      </div>
-
-    </div>
-
-  </div>
+</div>
 
 </section>
 
 
-<!-- PROCESS -->
+<!-- ================= PROCESS ================= -->
 
-<section id="process" class="light">
+<section id="process" class="soft">
 
-  <div class="container">
+<div class="container">
 
-    <div class="section-title">
+<div class="section-title">
 
-      <div class="eyebrow">
-        Simple Process
-      </div>
+<div class="eyebrow">
+Simple 4-Step Process
+</div>
 
-      <h2>
-        How the Session Works
-      </h2>
+<h2>
+From Confusion to Clarity
+</h2>
 
-    </div>
-
-
-    <div class="process">
-
-      <div class="process-card">
-
-        <div class="number">1</div>
-
-        <h3>Understand</h3>
-
-        <p>
-          We understand your current situation,
-          challenges and goals.
-        </p>
-
-      </div>
+</div>
 
 
-      <div class="process-card">
+<div class="process">
 
-        <div class="number">2</div>
+<div class="process-card">
 
-        <h3>Identify</h3>
+<div class="number">1</div>
 
-        <p>
-          We identify strengths, challenges
-          and possible skill gaps.
-        </p>
+<h3>Understand</h3>
 
-      </div>
+<p>
+Understand your current situation,
+challenges and goals.
+</p>
 
+</div>
 
-      <div class="process-card">
+<div class="process-card">
 
-        <div class="number">3</div>
+<div class="number">2</div>
 
-        <h3>Plan</h3>
+<h3>Identify</h3>
 
-        <p>
-          We create practical next steps
-          based on your situation.
-        </p>
+<p>
+Identify strengths, challenges
+and possible skill gaps.
+</p>
 
-      </div>
+</div>
 
+<div class="process-card">
 
-      <div class="process-card">
+<div class="number">3</div>
 
-        <div class="number">4</div>
+<h3>Plan</h3>
 
-        <h3>Move Forward</h3>
+<p>
+Create practical next steps
+based on your situation.
+</p>
 
-        <p>
-          You leave with greater clarity
-          about your next actions.
-        </p>
+</div>
 
-      </div>
+<div class="process-card">
 
-    </div>
+<div class="number">4</div>
 
-  </div>
+<h3>Move Forward</h3>
+
+<p>
+Leave with greater clarity about
+your next actions.
+</p>
+
+</div>
+
+</div>
+
+</div>
 
 </section>
 
 
-<!-- WHO -->
+<!-- ================= WHO ================= -->
 
 <section id="who">
 
-  <div class="container">
+<div class="container">
 
-    <div class="section-title">
+<div class="section-title">
 
-      <div class="eyebrow">
-        Is This For You?
-      </div>
+<div class="eyebrow">
+Who Is It For?
+</div>
 
-      <h2>
-        Who Can Benefit?
-      </h2>
+<h2>
+Who Can Benefit?
+</h2>
 
-    </div>
+<p>
+The session is designed for people
+looking for direction and practical clarity.
+</p>
+
+</div>
 
 
-    <div class="who">
+<div class="who">
 
-      <div class="who-item">
-        🎓 Fresh Graduates
-      </div>
+<div class="who-item">
+🎓 Fresh Graduates
+</div>
 
-      <div class="who-item">
-        💼 Job Seekers
-      </div>
+<div class="who-item">
+💼 Job Seekers
+</div>
 
-      <div class="who-item">
-        🔄 Career Changers
-      </div>
+<div class="who-item">
+🔄 Career Changers
+</div>
 
-      <div class="who-item">
-        😕 Career-Confused Professionals
-      </div>
+<div class="who-item">
+😕 Career-Confused Professionals
+</div>
 
-      <div class="who-item">
-        🚀 Professionals Ready to Level Up
-      </div>
+<div class="who-item">
+🚀 Professionals Ready to Level Up
+</div>
 
-      <div class="who-item">
-        🧭 Anyone Seeking Career Clarity
-      </div>
+<div class="who-item">
+🧭 Anyone Seeking Career Clarity
+</div>
 
-    </div>
+</div>
 
-  </div>
+</div>
 
 </section>
 
 
-<!-- CORE MESSAGE -->
+<!-- ================= QUOTE ================= -->
 
 <section>
 
-  <div class="container">
+<div class="container">
 
-    <div class="big-quote">
+<div class="quote-box">
 
-      <h2>
-        The Right Decision Starts With Clarity.
-      </h2>
+<h2>
+The Right Decision Starts With Clarity.
+</h2>
 
-      <p>
-        Even job seekers need assistance to make
-        the right decision. The goal is not to tell
-        you what your life should be — it is to help
-        you understand your options and choose your
-        next step with greater clarity.
-      </p>
+<p>
+Even job seekers need assistance to make
+the right decision. The purpose of this
+session is to help you understand your
+options, organize your thoughts and identify
+your next practical step.
+</p>
 
-    </div>
+</div>
 
-  </div>
+</div>
 
 </section>
 
 
-<!-- CTA -->
+<!-- ================= CTA ================= -->
 
 <section id="contact" class="cta">
 
-  <div class="container">
+<div class="container">
 
-    <div class="cta-box">
+<div class="cta-box">
 
-      <div class="eyebrow">
-        Take The First Step
-      </div>
+<div class="eyebrow">
+Take The First Step
+</div>
 
-      <h2>
-        Book Your Free Clarity Call
-      </h2>
+<h2>
+Book Your Free Clarity Call
+</h2>
 
-      <p>
-        Start with a conversation.
-        Understand your situation.
-        Discover your next step.
-      </p>
-
-
-      <div class="contact-buttons">
-
-        <a class="btn btn-gold"
-           href="https://wa.me/919059527699?text=Hello%20Shaik%20Sharif%2C%20I%20would%20like%20to%20book%20a%20Free%20Clarity%20Call."
-           target="_blank">
-
-          💬 WhatsApp — 9059527699
-
-        </a>
+<p>
+Start with a conversation.
+Understand your situation.
+Discover your next step.
+</p>
 
 
-        <a class="btn btn-teal"
-           href="mailto:sharif.talentscout@gmail.com?subject=Free%20Clarity%20Call%20Request">
+<div class="contact-buttons">
 
-          📧 Email Us
+<a class="btn btn-gold"
+href="https://wa.me/919059527699?text=Hello%20Shaik%20Sharif%2C%20I%20would%20like%20to%20book%20a%20Free%20Clarity%20Call."
+target="_blank">
 
-        </a>
+💬 WhatsApp — 9059527699
 
-      </div>
+</a>
 
-    </div>
+<a class="btn btn-teal"
+href="mailto:sharif.talentscout@gmail.com?subject=Free%20Clarity%20Call%20Request">
 
-  </div>
+📧 Email
+
+</a>
+
+</div>
+
+</div>
+
+</div>
 
 </section>
 
 
-<!-- FOOTER -->
+<!-- ================= FOOTER ================= -->
 
 <footer>
 
-  <div class="container">
+<div class="container">
 
-    <img src="gnana-deepika-logo.png"
-         alt="Gnana Deepika Logo">
+<div class="footer-logo">
 
-    <strong>
-      GNANA DEEPIKA
-    </strong>
+<img src="./gnana-deepika-logo.png"
+     alt="Gnana Deepika Logo">
 
-    <small>
-      Career Clarity • Learning • Growth
-    </small>
+</div>
 
-    <br><br>
+<strong>
+GNANA DEEPIKA
+</strong>
 
-    <small>
-      © 2026 Gnana Deepika — All Rights Reserved.
-      <br>
-      Designed by Shaik Sharif | SS CAREER HUB
-    </small>
+<small>
+Career Clarity • Learning • Growth
+</small>
 
-  </div>
+<br><br>
+
+<small>
+© 2026 Gnana Deepika — All Rights Reserved.
+<br>
+Designed by Shaik Sharif | SS CAREER HUB
+</small>
+
+</div>
 
 </footer>
 
